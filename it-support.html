@@ -144,7 +144,37 @@
     opacity: 0.04;
     animation: floatBG 150s linear infinite;
   }
+.header {
+  position: relative;
+  z-index: 9999;
+}
 
+  @keyframes floatBG {
+    0% { transform: translate(0,0); }
+    100% { transform: translate(-50%, -50%); }
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 80px 20px 100px;
+  }
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 18px;
+}
 			
 </style>
 
@@ -154,7 +184,7 @@
   <div class="container">
     <!-- Hero -->
     <section class="hero">
-      <h1>Elite IT Outsourcing & .NET Expertise</h1>
+      <h1>Elite IT Outsourcing & .NET Expertise..</h1>
       <p class="subheading">Empowering UK & global businesses with premium Indian IT talent. Seamless DBA monitoring, advanced .NET engineering, proactive software testing, and 24/7 support..</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn btn-primary">Start Partnership</a>
